@@ -1,6 +1,8 @@
 [phases.setup]
-nixPkgs = ["dotnet-sdk_8]
+nixPkgs = ["dotnet-sdk_8"]
+
 [phases.build]
-cmds = [dotnet publish -c Release -o out]
+cmds = ["dotnet publish -c Release -o out"]
+
 [start]
-cmd ="dotnet out/Rota-LivreWEB-API.dll"
+cmd = "dotnet out/Rota-LivreWEB-API.dll"
